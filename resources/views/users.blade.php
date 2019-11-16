@@ -40,7 +40,7 @@
 			</table>	
 		</div>
 		<div>
-			<a href="">Create New User</a>
+			<a href="create_user">Create New User</a>
 		</div>
 	</div>
 </body>

@@ -13,3 +13,9 @@
 
 // ユーザ一覧
 Route::get('/', 'UsersController@displayUsers');
+
+// 新規ユーザ登録
+// 入力画面表示
+Route::view('/create_user', 'create_user');
+// 登録処理
+Route::post('/create_user', 'UsersController@createUser');
