@@ -32,8 +32,8 @@
 					<td>{{ $record-> name}}</td>
 					<td>{{ $record-> password}}</td>
 					<td>{{ $record-> email}}</td>
-					<td align="center"><a href>View<br>Profile</a></td>
-					<td align="center"><a href>
+					<td align="center"><a href="">View<br>Profile</a></td>
+					<td align="center"><a href="" class="destroy">
 							<i class="material-icons">close</i>
 						</a>
 					</td>

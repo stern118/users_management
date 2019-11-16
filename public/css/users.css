@@ -2,10 +2,14 @@ h2 {
 	font-size: 25px;
 }
 
+.header {
+	margin-bottom: 40px;
+}
+
 a {
 	color: #66CDAA;
 }
 
-.header {
-	margin-bottom: 40px;
+.destroy {
+	color: red;
 }

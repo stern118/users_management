@@ -6,7 +6,7 @@
 	<link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<!-- bootstrap -->
 	<link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="{{ asset('css/users.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/create_user.css') }}">
 </head>
 <body>
 	<div class="container">
@@ -14,8 +14,8 @@
 			<h2>Users Management DashBorad</h2>
 			<hr>
 		</div>
-		<div class="card">
-			<div class="card-header">Create User</div>
+		<div class="card content">
+			<div class="card-header bg-dark text-white">Create User</div>
 			<div class="card-body">
 				<form action="" method="POST" class="form-horizontal">
 					{{ csrf_field() }}
@@ -41,7 +41,6 @@
 				</form>
 			</div>
 		</div>
-		
 		<div>
 			<a href="/">View All User</a>
 		</div>
