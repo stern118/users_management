@@ -2,6 +2,10 @@ h2 {
 	font-size: 25px;
 }
 
+a {
+	color: #66CDAA;
+}
+
 .header {
 	margin-bottom: 40px;
 }

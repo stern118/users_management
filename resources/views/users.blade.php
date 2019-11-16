@@ -15,23 +15,25 @@
 			<hr>
 		</div>
 		<div>
-			<table class="table">
+			<table class="table table-striped table-bordered">
+				<thead class="thead-dark">
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Password</th>
+						<th>Email</th>
+						<th>Profile</th>
+						<th>Destroy</th>
+					</tr>
+				</thead>
 				@foreach ($records as $record)
-				<tr>
-					<th>ID</th>
-					<th>Name</th>
-					<th>Password</th>
-					<th>Email</th>
-					<th>Profile</th>
-					<th>Destroy</th>
-				</tr>
 				<tr>
 					<td>{{ $record-> user_id}}</td>
 					<td>{{ $record-> name}}</td>
 					<td>{{ $record-> password}}</td>
 					<td>{{ $record-> email}}</td>
-					<td><a href>View<br>Profile</a></td>
-					<td><a href>
+					<td align="center"><a href>View<br>Profile</a></td>
+					<td align="center"><a href>
 							<i class="material-icons">close</i>
 						</a>
 					</td>
