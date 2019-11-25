@@ -23,7 +23,7 @@
 						<th>Password</th>
 						<th>Email</th>
 						<th>Profile</th>
-						<th>Destroy</th>
+						<th>Delete</th>
 					</tr>
 				</thead>
 				@foreach ($records as $record)
@@ -33,7 +33,7 @@
 					<td>{{ $record-> password}}</td>
 					<td>{{ $record-> email}}</td>
 					<td align="center"><a href="">View<br>Profile</a></td>
-					<td align="center"><a href="" class="destroy">
+					<td align="center"><a href="delete_user" class="destroy">
 							<i class="material-icons">close</i>
 						</a>
 					</td>
