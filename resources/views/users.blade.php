@@ -7,6 +7,21 @@
 	<!-- bootstrap -->
 	<link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="{{ asset('css/users.css') }}">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.delete-user').on('click', function(){
+				if(!confirm('Are you sure you want to delete the user?')) {
+					return false;
+				} else {
+					location.href = 'delete_user?user_id='
+										+ $(this).closest('tr').find('td').first().text();
+				}
+				//console.log('Hello');
+			});
+		});
+	</script>
 </head>
 <body>
 	<div class="container">
@@ -33,7 +48,7 @@
 					<td>{{ $record-> password}}</td>
 					<td>{{ $record-> email}}</td>
 					<td align="center"><a href="">View<br>Profile</a></td>
-					<td align="center"><a href="delete_user" class="destroy">
+					<td align="center"><a href="#" class="delete-user">
 							<i class="material-icons">close</i>
 						</a>
 					</td>

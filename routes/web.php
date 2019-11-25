@@ -19,3 +19,6 @@ Route::get('/', 'UsersController@displayUsers');
 Route::view('/create_user', 'create_user');
 // 登録処理
 Route::post('/create_user', 'UsersController@createUser');
+
+// ユーザ削除
+Route::get('/delete_user', 'UsersController@deleteUser');

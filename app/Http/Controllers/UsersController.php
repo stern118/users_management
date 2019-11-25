@@ -23,4 +23,13 @@ class UsersController extends Controller {
 
     	return redirect('/');
     }
+
+    public function deleteUser(Request $request) {
+        // useridをもとにレコード検索
+        $user = User::where('user_id', $request->user_id);
+        // 削除
+        $user->delete();
+
+        return redirect('/');
+    }
 }
