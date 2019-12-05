@@ -37,7 +37,10 @@
 						<th>Name</th>
 						<th>Password</th>
 						<th>Email</th>
-						<th>Profile</th>
+						<th>
+							Edit<br>
+							Profile
+						</th>
 						<th>Delete</th>
 					</tr>
 				</thead>
@@ -47,7 +50,7 @@
 					<td>{{ $record-> name}}</td>
 					<td>{{ $record-> password}}</td>
 					<td>{{ $record-> email}}</td>
-					<td align="center"><a href="">View<br>Profile</a></td>
+					<td align="center"><a href="">Edit<br>Profile</a></td>
 					<td align="center"><a href="#" class="delete-user">
 							<i class="material-icons">close</i>
 						</a>
