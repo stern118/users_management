@@ -50,7 +50,12 @@
 					<td>{{ $record-> name}}</td>
 					<td>{{ $record-> password}}</td>
 					<td>{{ $record-> email}}</td>
-					<td align="center"><a href="">Edit<br>Profile</a></td>
+					<td align="center">
+						<a href="edit_user?user_id={{ $record-> user_id}}">
+							Edit<br>
+							Profile
+						</a>
+					</td>
 					<td align="center"><a href="#" class="delete-user">
 							<i class="material-icons">close</i>
 						</a>

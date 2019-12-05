@@ -20,5 +20,10 @@ Route::view('/create_user', 'create_user');
 // 登録処理
 Route::post('/create_user', 'UsersController@createUser');
 
+
+// ユーザ編集
+// 入力画面表示
+Route::get('/edit_user', 'UsersController@initEditUserForm');
+
 // ユーザ削除
 Route::get('/delete_user', 'UsersController@deleteUser');
