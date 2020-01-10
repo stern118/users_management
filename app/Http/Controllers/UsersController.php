@@ -29,6 +29,17 @@ class UsersController extends Controller {
         return view('edit_user', ['record' => $user]);
     }
 
+    public function updateUser(Request $request) {
+        $user = User::where('user_id', $request->user_id)->first(); 
+        $user->user_id  = $request->user_id;
+        $user->password = Hash::make($request->password);
+        $user->name     = $request->name;
+        $user->email    = $request->email;
+        $user->save();
+        
+        return redirect('/');
+    }
+
     public function deleteUser(Request $request) {
         // useridをもとにレコード検索
         $user = User::where('user_id', $request->user_id);
